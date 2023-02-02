@@ -12,3 +12,6 @@ class Libro(models.Model):
     descripcion = models.CharField(max_length=500)
     fecha_pub = models.DateTimeField()
     fecha_creacion = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.titulo
